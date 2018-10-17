@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Midterm</title>
+
+    <style>
+        body,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .con {
+            margin: 0 auto;
+
+        }
+
+        .con {
+            max-width: 1000px;
+
+
+        }
+
+        .logo-bar {
+            text-align: center;
+        }
+
+        .logo-bar .logo {
+            text-align: center;
+            font-weight: bold;
+            font-size: 4.5rem;
+            text-transform: uppercase;
+            letter-spacing: -7px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .menu-bar {
+            margin-top: 1rem;
+        }
+
+        .menu-bar .menu-1>ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .menu-bar .menu-1>ul>li {
+            float: left;
+            width: calc(100% / 7);
+            position: relative;
+        }
+
+        .menu-bar .menu-1>ul>li::before,
+        .menu-bar nav>ul>li::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            6 left: 0;
+            width: 1px;
+            height: 0.8rem;
+            transform: translateY(-50%);
+            background-color: black;
+        }
+
+        .menu-bar .menu-1>ul>li:first-child::before,
+        .menu-bar nav>ul>li:last-child::after {
+            width: 2px;
+        }
+
+        .menu-bar .menu-1>ul>li::after {
+            left: auto;
+            right: 0;
+        }
+
+        .menu-bar .menu-1>ul>li>a {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+            font-size: 0.95rem;
+        }
+
+        .menu-bar .menu-1 ul li>a:hover {
+            background-color: #FFFFC2;
+        }
+
+        
+       #myImg {
+            display: inline-block;
+            float: left;
+            align-content: center;
+            width: 500px;
+            height: 450px;
+            margin: 500px 550px 0 550px;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+       
+        .button {
+            display: inline-block;
+            float: left;
+            margin: 20px 750px 0 750px;
+            
+            background-color: #FFBB00;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+        
+        .button-1 {
+            display: inline-block;
+            float: left;
+            margin: -20px 785px 0 785px;
+            
+            background-color: #FFBB00;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+        .button-2 {
+            display: inline-block;
+            float: left;
+            margin: -20px 820px 0 820px;
+            background-color: #FFBB00;
+        
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+
+
+    </style>
+</head>
+
+<body id="eun">
+    <div class="logo-bar">
+        <div class="logo">♡KYEONGNI♡</div>
+    </div>
+
+    <div class="menu-bar">
+        <div class="con">
+            <nav class="menu-1">
+                <ul>
+                    <li><a href="#">WHO AM I</a></li>
+                    <li><a href="#">FAMILY</a></li>
+                    <li><a href="#">HOMETOWN</a></li>
+                    <li><a href="#">ADDRESS</a></li>
+                    <li><a href="#">FAVORITE</a></li>
+                    <li><a href="#">OHWHOL</a></li>
+                    <li><a href="#">FRIEND</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <img id="myImg" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F2595528020%2Fb36acl7brzcdnfse1miy.jpeg&f=1" alt="">
+
+
+    
+    <button class="button" type="button" onclick="changeImage1()"></button> 
+    <button class="button-1" type="button" onclick="changeImage2()"></button>
+    <button class="button-2" type="button" onclick="changeImage3()"></button>
+  
+    
+
+    <script>
+        var bodyElenment=document.getElementById("eun");
+        var numberOfClicks = 0;
+        var Image1=https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F2595528020%2Fb36acl7brzcdnfse1miy.jpeg&f=1;
+        var Image2=https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.city.kr%2Ffiles%2Fattach%2Fimages%2F164%2F082%2F193%2F2dc8b6b0e868fc8288b8069c7ae5021c.jpg&f=1;
+        var Image3=https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bDH00Rb50C-IkrESUhc7zgHaE8%26pid%3D15.1&f=1;
+       
+        
+        function changeImage1() {
+
+            var imageElement = document.getElementById("myImg");
+            imageElement.src = Image1;
+
+        }
+
+        function changeImage2() {
+
+            var imageElement = document.getElementById("myImg");
+            imageElement.src = Image2;
+
+        }
+
+        function changeImage3() {
+
+            var imageElement = document.getElementById("myImg");
+            imageElement.src = Image3;
+
+        }
+    </script>
+</body>
+
+</html>
